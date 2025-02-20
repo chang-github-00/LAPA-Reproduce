@@ -1,0 +1,5 @@
+[default]
+entity = changma
+project = protein_rebuttal
+base_url = https://api.wandb.ai
+

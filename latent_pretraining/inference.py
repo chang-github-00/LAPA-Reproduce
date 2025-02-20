@@ -46,7 +46,7 @@ if __name__ == "__main__":
     parser.add_argument('--multi_image', type=int, default=1)
     parser.add_argument('--jax_distributed', type=dict, default=JaxDistributedConfig.get_default_config())
     parser.add_argument('--seed', type=int, default=1234)
-    parser.add_argument('--mesh_dim', type=str, default="1,-1,1,1")
+    parser.add_argument('--mesh_dim', type=str, default="1,1,-1,1")
     parser.add_argument('--dtype', type=str, default="bf16")
     parser.add_argument('--load_llama_config', type=str, default="7b")
     parser.add_argument('--update_llama_config', type=str, default="dict(delta_vocab_size=8,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)")

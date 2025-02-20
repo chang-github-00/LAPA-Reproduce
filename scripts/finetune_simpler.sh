@@ -4,19 +4,26 @@ cd $PROJECT_DIR
 export PYTHONPATH="$PYTHONPATH:$PROJECT_DIR"
 export LIBTPU_INIT_ARGS="--xla_tpu_megacore_fusion_allow_ags=false --xla_enable_async_collective_permute=true --xla_tpu_enable_ag_backward_pipelining=true --xla_tpu_enable_data_parallel_all_reduce_opt=true --xla_tpu_data_parallel_opt_different_sized_ops=true --xla_tpu_enable_async_collective_fusion=true --xla_tpu_enable_async_collective_fusion_multiple_steps=true --xla_tpu_overlap_compute_collective_tc=true --xla_enable_async_all_gather=true"
 
-export absolute_path= # absolute path to the project directory
+export absolute_path="/home/aiops/changma/LAPA" # absolute path to the project directory
 export llama_tokenizer_path="$absolute_path/lapa_checkpoints/tokenizer.model"
 export output_dir="$absolute_path/outputs"
 
 export project_id='lapa'
-export experiment_note='lapa_finetune'
+export experiment_note='lapa_finetune_from_openx _pretrain'
+export experiment_note='lapa_finetune_from_openx _pretrain'
+export experiment_note='lapa_finetune_from_openx _pretrain'
+export experiment_note='lapa_finetune_from_openx _pretrain'
+export experiment_note='lapa_finetune_from_openx _pretrain'
+export experiment_note='lapa_finetune_from_openx _pretrain'
 
 export dataset_path="$absolute_path/data/simpler.jsonl"
-export experiment_id='finetune_simpler'
+export experiment_id='finetune_simpler_from_openx_pretrain'
+# export checkpoint_path="params::$absolute_path/lapa_checkpoints/params"
+export checkpoint_path="params::$absolute_path/outputs/latent_pretrain_openx/streaming_params_70000"
 
 python3 -u -m latent_pretraining.train \
     --modality='vision,action,delta' \
-    --mesh_dim='!-1,4,1,1' \
+    --mesh_dim='!-1,8,1,1' \
     --dtype='bf16' \
     --total_steps=500 \
     --log_freq=1 \
@@ -25,7 +32,7 @@ python3 -u -m latent_pretraining.train \
     --eval_log_freq=100 \
     --save_milestone_freq=500 \
     --load_llama_config='7b' \
-    --load_checkpoint="params::$absolute_path/lapa_checkpoints/params" \
+    --load_checkpoint="$checkpoint_path" \
     --update_llama_config="dict(action_vocab_size=245,delta_vocab_size=8,theta=50000000,max_sequence_length=2048,use_flash_attention=True,scan_attention=True,scan_query_chunk_size=512,scan_key_chunk_size=1024,remat_attention='nothing_saveable',scan_mlp=True,scan_mlp_chunk_size=8192,remat_mlp='nothing_saveable',remat_block='nothing_saveable',scan_layers=True)" \
     --tokenizer.vocab_file="$llama_tokenizer_path" \
     --optimizer.type='adamw' \
@@ -61,6 +68,3 @@ python3 -u -m latent_pretraining.train \
     --logger.experiment_note="$experiment_note" \
     --logger.output_dir="$output_dir" \
     --logger.wandb_dir="$HOME/experiment_output/$project_id"
-
-
-

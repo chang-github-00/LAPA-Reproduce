@@ -1,3 +1,6 @@
 lapa_checkpoints/*
 __pycache__/
 wandb/*
+outputs/
+data/
+lwm_checkpoints
