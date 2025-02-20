@@ -30,7 +30,7 @@ Results are as follows:
 | + finetuning                                         | 0.625                                       | 0.4167                     | 0.7083                         | 0.6667                      | 0.6042 |
 | + finetuning + official pretraining                  | 0.5833                                    | 0.4167                     | 0.7083                         | 0.75                        | 0.6146 |
 | + finetuning + openx pretraining                     | 0.375                                       | 0.4589                     | 0.6667                         | 0.4583                      | 0.4896 |
-| + Reported in paper (bridgev2 pretraining)     | - | - | - |  -  |0.573|
+| **Reported in paper (bridgev2 pretraining)**     | - | - | - |  -  |0.573|
 ## Getting Started 
 
 ```bash
