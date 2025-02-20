@@ -11,7 +11,7 @@ Use data from LAPA repo and pretrained [LWM](https://huggingface.co/LargeWorldMo
 <img width="800" alt="image" src="https://github.com/user-attachments/assets/4eddb92c-cfbe-46a9-ba3f-92210df58e2c" />
 
 ### Fine-tuning
-Compared fine-tuning results on Simpler trajectories in the repo based on 3 checkpoints for 500 steps. The finetuning scripts follow
+Compared fine-tuning results on Simpler trajectories in the repo based on 3 checkpoints for 500 steps. The finetuning scripts follow [[here]](https://github.com/chang-github-00/LAPA-Reproduce/tree/main/scripts).
 
 1. [LWM Checkpoint](https://huggingface.co/LargeWorldModel/LWM-Chat-1M-Jax) (purple line)
 2. [LAPA Official Checkpoint](latent-action-pretraining/LAPA-7B-openx) (blue line)
@@ -20,7 +20,7 @@ Compared fine-tuning results on Simpler trajectories in the repo based on 3 chec
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/1aef18b7-a448-40c3-bfd5-845e46085c02" />
 
 ### Testing on Simpler
-Testing scrips follow 
+Testing scrips follow [here](https://github.com/chang-github-00/LAPA-Reproduce/blob/main/SimplerEnv/scripts/lapa_bridge.sh).
 Note that the original script has a bug as in [issues#29](https://github.com/LatentActionPretraining/LAPA/issues/29), so we add a config `delta_vocab_size=8`.
 
 Results are as follows: 
