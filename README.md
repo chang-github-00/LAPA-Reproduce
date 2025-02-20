@@ -1,28 +1,35 @@
-# LAPA: Latent Action Pretraining from Videos
+# LAPA: Latent Action Pretraining from Videos -- Reproduce Version
+[[Original Repo]](https://github.com/LatentActionPretraining/LAPA)
 [[Project]](https://latentactionpretraining.github.io/)
 [[Paper]](https://arxiv.org/abs/2410.11758)
 [[Models]](https://huggingface.co/latent-action-pretraining/LAPA-7B-openx)
 
-**News**
+## Reproducing Experiments
 
-[2025.01.22] LAPA has been accepted to ICLR 2025! 
+### Pre-training
+Use data from LAPA repo and pretrained [LWM](https://huggingface.co/LargeWorldModel/LWM-Chat-1M-Jax) for 70k steps. The configurations are exactly the same, except using 8 A100 GPUs.
+<img width="800" alt="image" src="https://github.com/user-attachments/assets/4eddb92c-cfbe-46a9-ba3f-92210df58e2c" />
 
-[2024.11.22] We release the weights for the LAQ pretrained on openx here: https://huggingface.co/latent-action-pretraining/LAPA-7B-openx/blob/main/laq_openx.pt. 
+### Fine-tuning
+Compared fine-tuning results on Simpler trajectories in the repo based on 3 checkpoints for 500 steps. The finetuning scripts follow
 
-[2024.11.10] LAPA has won the [CoRL 2024 LangRob Workshop](https://sites.google.com/view/langrob-corl24/) **Best Paper Award** (among 75 accepted papers)! 🥳
+1. [LWM Checkpoint](https://huggingface.co/LargeWorldModel/LWM-Chat-1M-Jax) (purple line)
+2. [LAPA Official Checkpoint](latent-action-pretraining/LAPA-7B-openx) (blue line)
+3. LWM Checkpoint Pre-trained on OpenX latent action data (green line)
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/6f90892b-3d31-4176-a2a2-44fe55b3453a" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/1aef18b7-a448-40c3-bfd5-845e46085c02" />
 
-**LAPA** 
+### Testing on Simpler
+Testing scrips follow 
+Note that the original script has a bug as in [issues#29](https://github.com/LatentActionPretraining/LAPA/issues/29), so we add a config `delta_vocab_size=8`.
 
-- **Unsupervised approach** for pretraining Vision-Language-Action (VLA) models without ground-truth robot action labels.
-
-- Outperforms the current state-of-the-art VLA model trained with ground-truth actions, building a new **SOTA VLA model**.
-
-- Achieves over **30x** greater pretraining efficiency compared to conventional VLA pretraining.
-
-<div align="center">
-  <img src="./imgs/latent_action_pretraining.png"/>
-</div>
-
+Results are as follows: 
+| Task                                                 | StackGreenCubeOnYellow | PutCarrotOnPlate| PutSpoonOnTableCloth | PutEggplantInBasket | Avg   |
+|------------------------------------------------------|---------------------------------------------|----------------------------|--------------------------------|-----------------------------|-------|
+| **LWM-1M-Chat Base:**                                |                                             |                            |                                |                             |       |
+| + finetuning                                         | 0.625                                       | 0.4167                     | 0.7083                         | 0.6667                      | 0.6042 |
+| + finetuning + official pretraining                  | 0.5833                                    | 0.4167                     | 0.7083                         | 0.75                        | 0.6146 |
+| + finetuning + openx pretraining                     | 0.375                                       | 0.4589                     | 0.6667                         | 0.4583                      | 0.4896 |
 
 ## Getting Started 
 
