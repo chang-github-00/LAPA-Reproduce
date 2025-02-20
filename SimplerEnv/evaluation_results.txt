@@ -1,0 +1,416 @@
+Average success: 0.5833333333333334
+Average sub task grasp success: 0.625
+Average sub task move success: 0.625
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', env_name='StackGreenCubeOnYellowCubeBakedTexInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,remat_mlp='nothing_saveable',scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.5833333333333334
+Average sub task grasp success: 0.6666666666666666
+Average sub task move success: 0.6666666666666666
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', env_name='StackGreenCubeOnYellowCubeBakedTexInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,remat_mlp='nothing_saveable',scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.4166666666666667
+Average sub task grasp success: 0.5
+Average sub task move success: 0.5
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', env_name='PutCarrotOnPlateInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.7083333333333334
+Average sub task grasp success: 0.75
+Average sub task move success: 0.75
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', env_name='PutSpoonOnTableClothInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.75
+Average sub task grasp success: 0.875
+Average sub task move success: 0.875
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', env_name='PutEggplantInBasketScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v2', enable_raytracing=False, robot='widowx_sink_camera_setup', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=120, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.127, 0.127, 1.0], robot_init_y_range=[0.06, 0.06, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-hf-finetune/streaming_params_500', robot_init_xs=array([0.127]), robot_init_ys=array([0.06]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.375
+Average sub task grasp success: 0.625
+Average sub task move success: 0.5833333333333334
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', env_name='StackGreenCubeOnYellowCubeBakedTexInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,remat_mlp='nothing_saveable',scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.4583333333333333
+Average sub task grasp success: 0.625
+Average sub task move success: 0.5833333333333334
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', env_name='PutCarrotOnPlateInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.6666666666666666
+Average sub task grasp success: 0.7083333333333334
+Average sub task move success: 0.8333333333333334
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', env_name='PutSpoonOnTableClothInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.625
+Average sub task grasp success: 0.625
+Average sub task move success: 0.625
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', env_name='StackGreenCubeOnYellowCubeBakedTexInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,remat_mlp='nothing_saveable',scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.4166666666666667
+Average sub task grasp success: 0.4166666666666667
+Average sub task move success: 0.4583333333333333
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', env_name='PutCarrotOnPlateInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.7083333333333334
+Average sub task grasp success: 0.8333333333333334
+Average sub task move success: 0.8333333333333334
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', env_name='PutSpoonOnTableClothInScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v1', enable_raytracing=False, robot='widowx', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=60, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_real_eval_1.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.147, 0.147, 1.0], robot_init_y_range=[0.028, 0.028, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', robot_init_xs=array([0.147]), robot_init_ys=array([0.028]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.4583333333333333
+Average sub task grasp success: 0.625
+Average sub task move success: 0.6666666666666666
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', env_name='PutEggplantInBasketScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v2', enable_raytracing=False, robot='widowx_sink_camera_setup', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=120, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.127, 0.127, 1.0], robot_init_y_range=[0.06, 0.06, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-openx-pretrain-finetune/streaming_params_500', robot_init_xs=array([0.127]), robot_init_ys=array([0.06]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])
+Average success: 0.6666666666666666
+Average sub task grasp success: 0.8333333333333334
+Average sub task move success: 0.9166666666666666
+Args: Namespace(policy_model='lapa', policy_setup='widowx_bridge', ckpt_path='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', env_name='PutEggplantInBasketScene-v0', additional_env_save_tags=None, scene_name='bridge_table_1_v2', enable_raytracing=False, robot='widowx_sink_camera_setup', obs_camera_name=None, action_scale=1.0, action_scale_file='../data/simpler.csv', vqgan_checkpoint='../lapa_checkpoints/vqgan', seed=1234, mesh_dim='1,-1,1,1', dtype='bf16', load_llama_config='7b', update_llama_config="dict(delta_vocab_size=8, action_vocab_size=245,sample_mode='text',theta=50000000,max_sequence_length=32768,scan_attention=False,scan_query_chunk_size=128,scan_key_chunk_size=128,scan_mlp=False,scan_mlp_chunk_size=8192,scan_layers=True)", tokens_per_delta=4, tokens_per_action=7, vocab_file='../lapa_checkpoints/tokenizer.model', multi_image=1, jax_distributed=coordinator_address: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id001 !!python/name:builtins.str ''
+  _ops: []
+  _required: false
+  _value: null
+initialize_jax_distributed: false
+local_device_ids: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id001
+  _ops: []
+  _required: false
+  _value: null
+num_processes: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: &id002 !!python/name:builtins.int ''
+  _ops: []
+  _required: false
+  _value: null
+process_id: !!python/object:ml_collections.config_dict.config_dict.FieldReference
+  _field_type: *id002
+  _ops: []
+  _required: false
+  _value: null
+, delta_actions=True, cont_action=False, control_freq=5, sim_freq=500, max_episode_steps=120, rgb_overlay_path='ManiSkill2_real2sim/data/real_inpainting/bridge_sink.png', indi_task=None, gripper=0, unnorm_key='bridge_orig', robot_init_x_range=[0.127, 0.127, 1.0], robot_init_y_range=[0.06, 0.06, 1.0], robot_init_rot_quat_center=[0.0, 0.0, 0.0, 1.0], robot_init_rot_rpy_range=[0.0, 0.0, 1.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0], obj_variation_mode='episode', obj_episode_range=[0, 24], obj_init_x_range=[-0.35, -0.12, 5], obj_init_y_range=[-0.02, 0.42, 5], additional_env_build_kwargs=None, logging_dir='./results', tf_memory_limit=3072, octo_init_rng=0, tokenizer=add_bos_token: false
+add_eos_token: false
+vocab_file: ../lapa_checkpoints/tokenizer.model
+, llama=delta_vocab_size: 32
+sample_mode: all
+tie_vision_embeddings: false
+vision_vocab_size: 8448
+, load_checkpoint='params::/ssddata/junxianh/Agent-Projects/Latent-Planning/LAPA/outputs/lapa-jax-lwm-finetune/streaming_params_500', robot_init_xs=array([0.127]), robot_init_ys=array([0.06]), robot_init_quats=[array([0., 0., 0., 1.], dtype=float32)])

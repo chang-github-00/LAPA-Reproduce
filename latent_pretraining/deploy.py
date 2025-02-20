@@ -46,7 +46,7 @@ class LAPAServer:
             jax_distributed: dict,
             action_scale_file: str,
             img_aug: int,
-        ) -> Path:
+        ) -> Path: 
         
         set_random_seed(seed)
         tokenizer = VideoLLaMAConfig.get_tokenizer_config()
